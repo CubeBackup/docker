@@ -1,6 +1,12 @@
 FROM centos:7
+LABEL maintainer="support@cubebackup.com"
 ARG version
+RUN yum -y update; yum clean all
 RUN curl -s https://www.cubebackup.com/install.sh?version=$version | bash
-CMD ["/opt/cubebackup/bin/cbsrv"]
 EXPOSE 80
-VOLUME ["/opt/cubebackup/db", "/opt/cubebackup/log"]
+EXPOSE 443
+#Volumes for backup data and the data index
+VOLUME ["/cubebackup_data", "/cubebackup_index"]
+#Volume for cubebackup configuration
+VOLUME ["/opt/cubebackup"]
+CMD ["/opt/cubebackup/bin/cbsrv"]
