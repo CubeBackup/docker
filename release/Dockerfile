@@ -7,6 +7,6 @@ EXPOSE 80
 EXPOSE 443
 # Volumes for backup data and the data index
 VOLUME ["/cubebackup_data", "/cubebackup_index"]
-# Named volume for CubeBackup settings
+# Volume for CubeBackup settings
 VOLUME ["/opt/cubebackup"]
 CMD ["/opt/cubebackup/bin/cbsrv"]
