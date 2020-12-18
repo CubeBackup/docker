@@ -1,7 +1,5 @@
 # Docker image of CubeBackup
 
-# What is CubeBackup? 
-
 [CubeBackup](https://www.cubebackup.com) is a self-hosted Google Workspace backup solution, which can backup your business Google Workspace data on-premises or to the cloud. 
 
 For detailed usage and installation instructions, please check out the [docs](https://www.cubebackup.com/docs).
