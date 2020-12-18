@@ -20,7 +20,7 @@ docker run -d -p 80:80  cubebackup/cubebackup
 ```
 docker run -d  -p 80:80  -v <backup_dir_on_host>:/cubebackup_data -v <data_index_dir_on_host>:/cubebackup_index --mount source=cubebackup_cfg,target=/opt/cubebackup  --name cubebackup  cubebackup/cubebackup
 ```
-After the docker container is started, open http://\<host\> to see the configuration wizard of CubeBackup.
+After the docker container is started, open http://\<host_IP\> to see the configuration wizard of CubeBackup.
 
 For more detailed instruction on how to start CubeBackup in a docker container, please visit [this doc](https://www.cubebackup.com/docs/user_guide/installation/#for-docker-users)
 
