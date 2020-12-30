@@ -7,7 +7,7 @@ For detailed usage and installation instructions, please check out the [docs](ht
 # Dockerfile
 This repository contains Dockerfiles and scripts to build Docker images for CubeBackup. The files in the beta folder are used for beta testers. The files in the release folder are for the stable release of the CubeBackup docker image.
 
-The docker image of CubeBackup is hosted on Docker hub at **cubebackup/cubebackup**. 
+The docker image of CubeBackup is hosted on Docker hub at **[cubebackup/cubebackup](https://hub.docker.com/r/cubebackup/cubebackup)**. 
 
 # Usage
 
