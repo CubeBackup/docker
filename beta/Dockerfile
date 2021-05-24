@@ -5,5 +5,4 @@ RUN curl -s https://v4beta.cubebackup.com/install.sh?version=$version | bash
 EXPOSE 80
 EXPOSE 443
 VOLUME ["/cubebackup_data", "/cubebackup_index"]
-VOLUME ["/opt/cubebackup"]
 CMD ["/opt/cubebackup/bin/cbsrv"]
